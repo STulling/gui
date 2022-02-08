@@ -7,10 +7,10 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/faiface/gui"
-	"github.com/faiface/mainthread"
+	"github.com/STulling/gui"
+	"github.com/STulling/mainthread"
 	"github.com/go-gl/gl/v2.1/gl"
-	"github.com/go-gl/glfw/v3.2/glfw"
+	"github.com/go-gl/glfw/v3.3/glfw"
 )
 
 // Option is a functional option to the window constructor New.

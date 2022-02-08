@@ -2,10 +2,12 @@
 
 Super minimal, rock-solid foundation for concurrent GUI in Go.
 
+(Updated dependencies to work better with windows)
+
 ## Installation
 
 ```
-go get -u github.com/faiface/gui
+go get -u github.com/STulling/gui
 ```
 
 Currently uses [GLFW](https://www.glfw.org/) under the hood, so have [these dependencies](https://github.com/go-gl/glfw#installation).
@@ -55,7 +57,7 @@ Why the hell has no one made a concurrent GUI in Go yet? I have no idea. Go is a
 
 The main idea is that different components of the GUI (buttons, text fields, ...) run concurrently and communicate using channels. Furthermore, they receive events from an object called _environment_ and can draw by sending draw commands to it.
 
-Here's [`Env`](https://godoc.org/github.com/faiface/gui#Env0), short for environment:
+Here's [`Env`](https://godoc.org/github.com/STulling/gui#Env0), short for environment:
 
 ```go
 type Env interface {
